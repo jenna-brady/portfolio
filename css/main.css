@@ -1,0 +1,136 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-list:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  color: var(--color-primary);
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
+  font-weight: bold;
+
+}
+
+a {
+  text-decoration: none;
+  transition: all 200ms ease;
+  color: #000;
+  list-style-type: none;
+}
+
+.bar {
+  background-color: #fff;
+}
+
+.nav {
+  display: none;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: right;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-content {
+  width: 100%;
+  position: absolute;
+  bottom: 4em;
+  left: 0;
+  display: inline-block;
+
+}
+
+.contact {
+  color: #000;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check + .nav-label::before {
+  content: none;
+  display: none;
+}
+
+.nav-open {
+  position: absolute;
+  top: .5em;
+  right: 0;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+  position: absolute;
+  top: .5em;
+  right: 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.work{
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .banner-content {
+    width: 100%;
+    position: absolute;
+    bottom: 8em;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    width: 50%;
+  }
+
+  .banner-content {
+    width: 100%;
+    top: 20em;
+  }
+
+  .nav-open {
+    position: absolute;
+    top: .5em;
+    right: 1em;
+  }
+
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner-content {
+    bottom: 19em;
+  }
+
+  img {
+    width: 50%;
+  }
+
+}
