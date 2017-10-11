@@ -85,9 +85,30 @@ a {
   text-align: center;
 }
 
-.work{
+.work {
   width: 100%;
   text-align: center;
+}
+
+.pesona-section {
+  position: relative;
+}
+.persona-1 {
+  position: absolute;
+  width: 15%;
+  top: 6em;
+  left: 21em;
+}
+
+.persona-2 {
+  position: absolute;
+  width: 15%;
+  bottom: 25em;
+  right: 18em;
+}
+
+.persona-details dt, .persona-details dd {
+display: inline-block;
 }
 
 @media only screen and (min-width: 38em) {
