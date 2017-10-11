@@ -10,34 +10,11 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body class="grid">
   {{content}}
-  <header class="unit xs-1 s-1 m-1 l-1 push-0 absolute w-1 zindex-3">
-      <div class="bar clearfix masthead push-none pad-t-1-2 gutter">
-        <div>
-          <i class="icon i-48">
-            <img src="http://via.placeholder.com/150x150" alt="">
-          </i>
-        </div>
-        <nav role="navigation" id="nav">
-          <input type="checkbox" class="nav-check" id="nav-check">
-          <label class="nav-label" for="nav-check">
-            <i class="nav-open icon i-64">
-              <img src="images/toggle-open.svg" alt="Open Navigation"/>
-            </i>
-            <i class="nav-close icon i-64">
-              <img src="images/toggle-close.svg"alt="Close Navigation"/>
-            </i>
-          </label>
-          <ul class="nav text-center list-group push-0 milli">
-            <li class="nav-list island-1-2 gutter-1-4 text-center"><a href="">About Me</a></li>
-            <li class="nav-list island-1-2 gutter-1-4 text-center"><a href="{{site.baseurl}}/work.html">Portfolio</a></li>
-            <li class="nav-list island-1-2 gutter-1-4 text-center"><a href="">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  {% includes nav.html %}
     <footer class="unit sx-1 s-1 wrapper island">
         <small class=" text-center copyright pad-t-1-2"> ©2017 all rights reserved Jenna Brady</small>
     </footer>

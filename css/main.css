@@ -1,7 +1,3 @@
-html {
-  font-family: 'Open Sans', sans-serif;
-}
-
 .nav-list:hover {
   text-decoration: none;
   transform: scale(1.1);
