@@ -19,5 +19,26 @@
         <small class="micro pad-t-2 pad-b-2 "> ©2017 all rights reserved Jenna Brady</small>
     </footer>
   <script src="js/main.js"></script>
+  <script src="js/rellax.min.js"></script>
+<script>
+  // Accepts any class name
+  var rellax = new Rellax('.rellax');
+</script>
+<script>
+  // Also can pass in optional settings block
+  var rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: false,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+</script>
+<script>
+  // Center all the things!
+  var rellax = new Rellax('.rellax', {
+    center: true
+  });
+</script>
   </body>
 </html>
